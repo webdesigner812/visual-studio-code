@@ -1,9 +1,27 @@
-h1{
-    color:blue;
+body{
+    text-align: center;
+    background-color: aliceblue;
 
 }
-body{
-    background-color:pink ;
-    text-align: center;
-
+h1{
+    font-size: large;
+    color: rgb(236, 40, 40);
+}
+h3{
+    font-size: medium;
+    color: darkblue;
+    font-weight:bold;
+}
+button{
+    border-style:solid;
+    border-color: rgb(44, 2, 44);
+    border-radius: 5px;
+    background-color: darksalmon;
+    color: deeppink;
+    width: 50px;
+    height:30px;
+}
+#familypic{
+    width:500px;
+    height:500px;
 }

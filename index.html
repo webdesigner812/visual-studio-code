@@ -1,21 +1,30 @@
 <html>
-    <head>
-        <title>about console log</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Project on console</h1>
-        <p>visual studio code</p>
-        <p>console.log is a developers best tool where he can check the output. The console.log() should be used in code only during development and debugging.</p>
-    <script>
-        console.log("my first web page");
-        var number1=5;
-        var number2=8;
-        console.log(number1+number2);
-        var first_name="ranbir";
-        var last_name="kapoor";
-        console.log(first_name.concat(last_name));
-    console.log("i want to be famous");
-    </script>
-    </body>
-</html>
+<head>
+<title>my family book</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> My Family Book</h1>
+    <img id="familypic" src="happy-family-cartoon-vector-23512540.jpg" >
+    <h3 id="name"></h3>
+    <button type="button" onclick="update()">next</button>
+</body>
+<script>
+     var image=["father.jpg","mother.jpg","brother.jpg","sister.jpg"];
+
+var membername=["Strong father","loving mother","protective brother","friendly sister"];
+var i=0;
+function update(){
+   var no_of_member=3;
+
+    if(i>no_of_member)
+    {i=0;}
+    var updateimage=image[i];
+    var updatename=membername[i];
+    document.getElementById("familypic").src=updateimage;
+    document.getElementById("name").innerHTML=updatename;
+    i++;
+    
+}
+
+</script>
